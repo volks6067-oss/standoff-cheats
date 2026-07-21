@@ -1,0 +1,6 @@
+#pragma once
+#include "cheat.h"
+namespace utils {
+    bool WorldToScreen(const Vector3& world, Vector3& screen);
+    float Distance(const Vector3& a, const Vector3& b);
+}
