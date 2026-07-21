@@ -1,0 +1,12 @@
+#include "utils.h"
+#include <cmath>
+bool utils::WorldToScreen(const Vector3& world, Vector3& screen) {
+    screen.x = world.x * 100 + 400;
+    screen.y = world.y * 100 + 300;
+    screen.z = 0;
+    return true;
+}
+float utils::Distance(const Vector3& a, const Vector3& b) {
+    float dx = a.x - b.x, dy = a.y - b.y, dz = a.z - b.z;
+    return sqrt(dx*dx + dy*dy + dz*dz);
+}
