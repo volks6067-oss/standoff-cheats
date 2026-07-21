@@ -1,0 +1,5 @@
+#include "skin.h"
+#include <android/log.h>
+void skin::ApplyChester() {
+    __android_log_print(ANDROID_LOG_INFO, "Skin", "Chester skin applied!");
+}
